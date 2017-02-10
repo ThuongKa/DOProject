@@ -1,6 +1,6 @@
 //
-//  DOProjectTests.swift
-//  DOProjectTests
+//  ViewControllerTests.swift
+//  DOProject
 //
 //  Created by Vu Thuong on 2/10/17.
 //  Copyright © 2017 Vu Thuong. All rights reserved.
@@ -9,7 +9,9 @@
 import XCTest
 @testable import DOProject
 
-class DOProjectTests: XCTestCase {
+class ViewControllerTests: XCTestCase {
+    
+    let vc = ViewController()
     
     override func setUp() {
         super.setUp()
@@ -21,16 +23,18 @@ class DOProjectTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testIsEventNumber() {
+        let event = 4
+        XCTAssertTrue(vc.IsEventNumber(num: event))
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testIsOddNumber() {
+        let odd = 3
+        XCTAssertTrue(vc.IsEventNumber(num: odd))
     }
     
+    func testIsNotEventNumber() {
+        let odd = 5
+        XCTAssertFalse(vc.IsEventNumber(num: odd))
+    }
 }

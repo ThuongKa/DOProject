@@ -15,11 +15,13 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func IsEventNumber(num: Int) -> Bool {
+        if num % 2 == 0 {
+            return true
+        } else {
+            return false
+        }
     }
-
-
+    
 }
 
