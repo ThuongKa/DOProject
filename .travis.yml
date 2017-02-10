@@ -1,6 +1,6 @@
 language: swift
 xcode_workspace: DOProject/DOProject.xcodeproj
-xcode_scheme: DOProject
+xcode_scheme: DOProjectTests
 xcode_sdk: iphonesimulator
 env: CODE_SIGN_IDENTITY=- CODE_SIGNING_REQUIRED=NO
 notifications:
