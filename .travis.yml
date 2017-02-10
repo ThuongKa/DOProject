@@ -1,5 +1,4 @@
-language: swift
-osx_image: xcode8.2
+language: objective-c
 xcode_workspace: DOProject/DOProject.xcodeproj
 xcode_scheme: DOProjectTests
 xcode_sdk: iphonesimulator
