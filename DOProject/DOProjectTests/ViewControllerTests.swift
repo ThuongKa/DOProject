@@ -37,4 +37,10 @@ class ViewControllerTests: XCTestCase {
         let odd = 5
         XCTAssertFalse(vc.IsEventNumber(num: odd))
     }
+    
+    func testIsNotOddNumber() {
+        let event = 4
+        XCTAssertFalse(vc.IsEventNumber(num: event))
+    }
+
 }
